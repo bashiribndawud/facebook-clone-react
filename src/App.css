@@ -4,9 +4,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  transition: all .3s ease-out;
 }
 
 body{
   overflow-x: hidden;
   scroll-behaviour: smooth;
+}
+
+.app__body{
+  padding: 20px 2%;
+  display: grid;
+  grid-template-columns: 20% 50% 20%;
+  gap: 4rem;
 }
