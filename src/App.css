@@ -4,9 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  transition: all .3s ease-out;
+  transition: all .3s ease-in;
 }
-
+.app{
+  background: #f1f2f5;
+  height: 100vh;
+}
 body{
   overflow-x: hidden;
   scroll-behaviour: smooth;

@@ -2,19 +2,24 @@ import React from 'react'
 import './Story.css'
 import { Avatar } from '@material-ui/core'
 
-const Story = ({title, profileSrc, bgImage}) => {
+
+
+
+
+
+const Story = ({ title, profileSrc, bgColor, backgroundImage }) => {
   return (
     <div
       className="Story"
       style={{
-        backgroundColor: "#08AEEA",
-        backgroundImage: "linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)",
+        backgroundColor: `${bgColor}`,
+        backgroundImage: `${backgroundImage}`,
       }}
     >
-      <Avatar src={profileSrc} />
-      <h4>{title}</h4>
+      <Avatar className="story__avatar" src={profileSrc} />
+      <h4 className="title">{title}</h4>
     </div>
   );
-}
+};
 
 export default Story
