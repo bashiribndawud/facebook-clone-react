@@ -10,7 +10,10 @@ import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import Avatar from "@material-ui/core/Avatar";
 import './Header.css';
+import { useStateValue } from "../../context/userContext";
 const Header = () => {
+  const {state: {user}} = useStateValue();
+  console.log(user)
   return (
     <div className="header">
       <div className="header__left">
@@ -55,7 +58,7 @@ const Header = () => {
         <IconButton>
           <NotificationsActiveIcon />
         </IconButton>
-        <Avatar alt="Cindy Baker" src="" />
+        <Avatar alt="Cindy Baker" src={user.photoURL} />
       </div>
     </div>
   );

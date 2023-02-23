@@ -1,0 +1,22 @@
+.Widget{
+    display: flex; 
+    padding: 8px;
+    border-radius: 10px;   
+}
+.Widget:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.Widget > img {
+    width: 100px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.content > h4 {
+    color: #2E2F2F;
+}
+.content > p {
+    color: gray;
+}

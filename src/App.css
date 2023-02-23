@@ -18,6 +18,7 @@ body{
 .app__body{
   padding: 20px 2%;
   display: grid;
-  grid-template-columns: 20% 50% 20%;
-  gap: 4rem;
+  grid-template-columns: 25% 50% 25%;
+  gap: 2rem;
 }
+

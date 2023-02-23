@@ -8,14 +8,15 @@ import PeopleIcon from "@material-ui/icons/People";
 import ChatIcon from "@material-ui/icons/Chat";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
-
+import './sidebar.css'
+import { useStateValue } from "../../context/userContext";
 const Sidebar = () => {
+   const {
+     state: { user },
+   } = useStateValue();
   return (
-    <div>
-      <SideBarRow
-        title="Bashir Dawud"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7sdXkpXEtgxsI7bVUyaGjLwrWu6-snS-22Mtl8qYcA&s"
-      />
+    <div className="sidebar">
+      <SideBarRow title={user.displayName} src={user.photoURL} />
       <SideBarRow title="Friends" Icon={LocalHospitalIcon} />
       <SideBarRow title="Covid Info Center" Icon={EmojiFlagsIcon} />
       <SideBarRow title="Friends" Icon={PeopleIcon} />

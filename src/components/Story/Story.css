@@ -13,7 +13,8 @@
 }
 
 .Story:hover{
-    transform: scale(1.07)
+    transform: scale(1.07);
+    background-color: #f7f7f7;
 }
 .story__avatar{
     border: 5px solid #2e81f4;

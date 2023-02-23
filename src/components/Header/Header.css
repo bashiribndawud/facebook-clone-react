@@ -1,5 +1,5 @@
 .header{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     background: #fff;
@@ -8,6 +8,7 @@
     padding: 7px 2%;
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
 }
 .header .header__left > img {
     width: 50px;
